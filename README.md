@@ -31,7 +31,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Starting this lab by creating two virtual machines (VMs) in Microsoft Azure, one domain controller (DC-1) (Windows Server 2022) and one client PC (Client-1) (Windows 10). Established both VMs on the same virtual network. Assigned a static IP address and enabled ICMPv4 inbound traffic rules on the domain controller. Next, ensured that we are able to ping the domain controller from the client PC. Now that connection has been established between both VMs, we are able to proceed with installing Active Directory on DC-1.
+Starting this lab by creating two virtual machines (VMs) in Microsoft Azure, one domain controller (DC-1) (Windows Server 2022) and one client PC (Client-1) (Windows 10). Established both VMs on the same virtual network. Assigned a static IP address and enabled ICMPv4 inbound traffic rules on the domain controller. Next, ensured that we are able to ping the domain controller from the client PC. Now that connection has been established between both VMs, we are able to proceed with installing Active Directory on DC-1. 
 </p>
 <br />
 
