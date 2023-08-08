@@ -44,7 +44,6 @@ Installed Active Directory on DC-1. Once installed and a domain name has been cr
 
 The next step was to join Client-1 to the domain. But before that, because Microsoft Azure VMs were used for this lab, the DNS server for Client-1 had to be changed to DC-1's private IP address. Once the DNS settings were changed, we are able to go into Client-1 and join it to the domain. Log into Client-1 as the admin user that was created on DC-1. This confirms that all domain user accounts that are created will now be able to log into Client-1.
 
-*On one instance of this lab, I ran into an error where Client-1 would only allow administrator accounts to remote log-in but not other users. I resolved this by: Log onto admin account -> right click Start -> Computer Management -> Local Users and Groups -> Groups -> double click Remote Desktop Users -> Add 'Domain Users'. Here's a good guide on that process: https://support.ncomputing.com/portal/en/kb/articles/how-to-add-a-new-user-and-configure-remote-desktop-user-s-group-settings-on-windows-server-2016
 </p>
 <br />
 
@@ -52,6 +51,8 @@ The next step was to join Client-1 to the domain. But before that, because Micro
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Logged into DC-1 on the admin account and ran a script in Powershell ISE to create 1000 user accounts with a set password. Then, used the log in credentials of a few scripted user accounts to log into Client-1. 
+
+*On one instance of this lab, I ran into an error where Client-1 would only allow administrator accounts to remote log-in but not other users. I resolved this by: Log onto admin account -> right click Start -> Computer Management -> Local Users and Groups -> Groups -> double click Remote Desktop Users -> Add 'Domain Users'. Here's a good guide on that process: https://support.ncomputing.com/portal/en/kb/articles/how-to-add-a-new-user-and-configure-remote-desktop-user-s-group-settings-on-windows-server-2016
 </p>
 <br />
