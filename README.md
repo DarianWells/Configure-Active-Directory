@@ -42,7 +42,9 @@ Starting this lab by creating two virtual machines (VMs) in Microsoft Azure; one
 Installed Active Directory on DC-1. Once installed and a domain name has been created (I named the domain 'mydomain.com'), go to the 'Active Directory Users and Computers' and create two organizational units titles ' _EMPLOYEES' and '_ADMINS'. Created a new admin account by adding a new user under the '_ADMINS' folder (I just used my own name). Go to the account properties and make the user a member of the 'Domain Admins' security group. After that, log out of DC-1 and log back in using the new admin account (for example, the login I created was mydomain.com\d-wells).
 
 
-The next step was to join Client-1 to the domain. But before that, because Microsoft Azure VMs were used for this lab, the DNS server for Client-1 had to be changed to DC-1's private IP address. Once the DNS settings were changed, we are able to go into Client-1 and join it to the domain. Log into Client-1 as the admin user that was created on DC-1. This confirms that all domain user accounts that are created will now be able to log into Client-1
+The next step was to join Client-1 to the domain. But before that, because Microsoft Azure VMs were used for this lab, the DNS server for Client-1 had to be changed to DC-1's private IP address. Once the DNS settings were changed, we are able to go into Client-1 and join it to the domain. Log into Client-1 as the admin user that was created on DC-1. This confirms that all domain user accounts that are created will now be able to log into Client-1.
+
+*On one instance of this lab, I ran into an error where Client-1 would only allow administrator accounts to remote log-in but not other users. I resolved this by: Log onto admin account -> right click Start -> Computer Management -> Local Users and Groups -> Groups -> double click Remote Desktop Users -> Add 'Domain Users'. Here's a good guide on that process: https://support.ncomputing.com/portal/en/kb/articles/how-to-add-a-new-user-and-configure-remote-desktop-user-s-group-settings-on-windows-server-2016
 </p>
 <br />
 
