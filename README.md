@@ -42,7 +42,7 @@ Starting this lab by creating two virtual machines (VMs) in Microsoft Azure; one
 Installed Active Directory on DC-1. Once installed and a domain name has been created (I named the domain 'mydomain.com'), go to the 'Active Directory Users and Computers' and create two organizational units titles ' _EMPLOYEES' and '_ADMINS'. Created a new admin account by adding a new user under the '_ADMINS' folder (I just used my own name). Go to the account properties and make the user a member of the 'Domain Admins' security group. After that, log out of DC-1 and log back in using the new admin account (for example, the login I created was mydomain.com\d-wells).
 
 
-The next step was to connect Client-1 to the domain. But before that, because Microsoft Azure VMs were used for this lab, the DNS server for Client-1 had to be changed to DC-1's private IP address. Once the DNS settings were changed, I was able to go into 
+The next step was to join Client-1 to the domain. But before that, because Microsoft Azure VMs were used for this lab, the DNS server for Client-1 had to be changed to DC-1's private IP address. Once the DNS settings were changed, we are able to go into Client-1 and join it to the domain. Log into Client-1 as the admin user that was created on DC-1. This confirms that all domain user accounts that are created will now be able to log into Client-1
 </p>
 <br />
 
